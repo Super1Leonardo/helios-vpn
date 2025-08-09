@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  
+  --color-primary: var(--color-yellow-500);
+  --color-secondary: white;
+  --color-tertiary: #f4f2f0;
+  --color-hint: var(--color-neutral-400);
+}
+
+:root {
+  background-color: var(--color-tertiary);
+}
+
+.element {
+  @apply rounded-lg p-5;
+  @apply lg:rounded-xl;
+}
+
+button {
+  @apply cursor-pointer px-4 py-2;
+  @apply transition-transform active:scale-95;
+  @apply select-none;
+}

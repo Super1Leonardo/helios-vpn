@@ -1,0 +1,59 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import airplane from "../assets/airplane.svg";
+---
+
+<div class="element bg-secondary">
+  <div class="grid lg:grid-cols-2 gap-5 lg:px-5 py-30">
+    <div id="split-1" class="text-4xl lg:text-6xl font-semibold">
+      Твой VPN<br />
+      прямо в Telegram
+    </div>
+    <div class="flex items-center lg:justify-end">
+      <form
+        id="button-1"
+        action="https://t.me/heliosvpnbot"
+        method="post"
+        target="_blank"
+      >
+        <button type="submit" class="bg-primary rounded-lg">
+          Попробовать 3 дня за 0 ₽
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="grid lg:grid-cols-4 gap-3 lg:gap-5">
+  <div class="element bg-secondary flex flex-col justify-between">
+    <div class="p-3 bg-green-100 w-fit rounded-lg ml-auto text-xl mb-5">
+      <Icon name="lucide:users" />
+    </div>
+    <div>
+      <div class="text-3xl">
+        <span id="number-1">27</span>K+
+      </div>
+      <div class="text-hint">пользователей</div>
+    </div>
+  </div>
+  <div class="element bg-secondary flex flex-col justify-between">
+    <div class="p-3 bg-blue-100 w-fit rounded-lg ml-auto text-xl mb-5">
+      <Icon name="lucide:globe" />
+    </div>
+    <div>
+      <div class="text-3xl">
+        <span id="number-2">3</span>
+      </div>
+      <div class="text-hint">локации</div>
+    </div>
+  </div>
+  <div class="element bg-secondary flex flex-col justify-between lg:col-span-2">
+    <div class="p-3 bg-purple-100 w-fit rounded-lg ml-auto text-xl mb-5">
+      <Icon name="lucide:eye-off" />
+    </div>
+    <div>
+      <div class="text-3xl" id="anon"></div>
+      <div class="text-hint">оплата криптовалютой или звездами</div>
+    </div>
+  </div>
+</div>

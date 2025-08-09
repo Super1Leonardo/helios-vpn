@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import Hero from "../components/Hero.astro";
+import Header from "../components/Header.astro";
+import screenshot from "../assets/screenshot.jpg";
+import Platforms from "../components/Platforms.astro";
+import Pricing from "../components/Pricing.astro";
+import Connect from "../components/Connect.astro";
+---
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<title>HeliosVPN</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="p-3 lg:p-7 space-y-3 lg:space-y-5">
+		<Header />
+		<Hero />
+		<Platforms />
+		<Pricing />
+		<Connect />
+
+		<div class="text-hint text-sm text-center">© 2025 HeliosVPN</div>
+
+		<script src="../scripts/animate"></script>
+	</body>
+</html>
